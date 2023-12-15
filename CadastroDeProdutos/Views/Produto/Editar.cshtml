@@ -1,0 +1,42 @@
+﻿@model ProdutoModel
+@{
+    ViewData["Title"] = "Editar Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Adicionar Produto</h1>
+</div>
+
+<<form asp-controller="Produto" asp-action="Editar" method="post" enctype="multipart/form-data">
+
+    
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" asp-for="nome" required class="form-control" placeholder="Digite o nome do produto">
+
+
+    </div>
+
+    <div class="form-group">
+        <label for="preço">Preço</label>
+        <input type="text" asp-for="preço" required class="form-control" placeholder="Digite o preço do produto">
+
+
+    </div>
+
+    <div class="form-group">
+        <label for="quantidade">Quantidade em Estoque</label>
+        <input type="text" asp-for="quantidade" required class="form-control" placeholder="Digite a quantidade em estoque do produto">
+    </div>
+    <div class="form-group">
+        <label for="Upload">Quantidade em Estoque</label>
+        <input type="file" asp-for="Upload" required class="form-control">
+    </div>
+        <button type="submit" class="btn btn-primary">Editar</button>
+            <a class="btn btn-secondary" asp-controller="Produto" asp-action="Index" role="button">Voltar</a>
+   
+</form>
+@section RightFooter
+{
+    <img widht="100" height="100"src="~/switch.jgp.jpg"/>
+}

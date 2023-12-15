@@ -1,0 +1,14 @@
+﻿@model ProdutoModel
+@{
+    ViewData["Title"] = "Validação apagar Produto";
+}
+
+<div class="text-center">
+    <h3>Deseja apagar o produto (@Model.nome)?</h3>
+</div>
+<a class="btn btn-danger asp-controller="Produto" asp-action="Apagar" asp-route-id="@Model.Id" role="button">Confirmar Exclusão</a>
+<a class="btn btn-primary role="button" asp-controller="Produto" asp-action="Index">Cancelar Exclusão</a>
+@section RightFooter{
+    <img widht="100" height="100" src="~/Playstation5.png" />
+
+}

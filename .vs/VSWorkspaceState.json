@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CadastroDeProdutos",
+    "\\CadastroDeProdutos\\Controllers",
+    "\\CadastroDeProdutos\\Migrations",
+    "\\CadastroDeProdutos\\Models",
+    "\\CadastroDeProdutos\\Repository",
+    "\\CadastroDeProdutos\\Views",
+    "\\CadastroDeProdutos\\wwwroot"
+  ],
+  "SelectedNode": "\\CadastroDeProdutos\\Repository\\ProdutoRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
